@@ -2,7 +2,9 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --muted: #64748b;
 }
 
 @theme inline {
@@ -14,9 +16,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #020617;
+    --foreground: #f8fafc;
+    --card: #0f172a;
+    --muted: #cbd5e1;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

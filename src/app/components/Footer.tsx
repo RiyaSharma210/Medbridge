@@ -2,63 +2,128 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-white py-12">
-      <div className="max-w-7xl mx-auto px-6">
+    <footer className="bg-slate-950 text-white py-14">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
         <div className="grid md:grid-cols-3 gap-10">
 
-          {/* Logo & About */}
+          {/* About */}
           <div>
-            <Image
-              src="/logo.png"
-              alt="MedBridge Logo"
-              width={80}
-              height={80}
-            />
 
-            <h3 className="text-2xl font-bold mt-4">
-              MedBridge
+            <div className="flex items-center gap-3">
+
+              <Image
+                src="/logo.png"
+                alt="MedBridge Logo"
+                width={60}
+                height={60}
+              />
+
+              <h3 className="text-2xl font-bold">
+                MedBridge
+              </h3>
+
+            </div>
+
+            <p className="text-gray-300 mt-4 leading-relaxed">
+              Helping students achieve their dream medical admissions through
+              expert counselling, NEET guidance, choice filling support,
+              and admission assistance across India.
+            </p>
+
+          </div>
+
+          {/* Quick Links */}
+          <div>
+
+            <h3 className="text-xl font-semibold mb-4">
+              Quick Links
             </h3>
 
-            <p className="text-gray-300 mt-3">
-              Helping students achieve their dream medical admissions through
-              expert counselling, guidance, and support.
-            </p>
+            <ul className="space-y-3 text-gray-300">
+
+              <li>
+                <a href="#home" className="hover:text-cyan-400">
+                  Home
+                </a>
+              </li>
+
+              <li>
+                <a href="#services" className="hover:text-cyan-400">
+                  Services
+                </a>
+              </li>
+
+              <li>
+                <a href="#gallery" className="hover:text-cyan-400">
+                  Selections
+                </a>
+              </li>
+
+              <li>
+                <a href="#colleges" className="hover:text-cyan-400">
+                  Colleges
+                </a>
+              </li>
+
+              <li>
+                <a href="#contact" className="hover:text-cyan-400">
+                  Contact
+                </a>
+              </li>
+
+            </ul>
+
           </div>
 
           {/* Contact */}
           <div>
+
             <h3 className="text-xl font-semibold mb-4">
               Contact Information
             </h3>
 
             <ul className="space-y-3 text-gray-300">
-              <li>📞 8708542919</li>
-              <li>📧 medbridgeindiaofficial@gmail.com</li>
-              <li>📍 Geeta Nagar, Bypass Road, Akola, Maharashtra</li>
+
+              <li>
+                📞 8708542919
+              </li>
+
+              <li>
+                📧 medbridgeindiaofficial@gmail.com
+              </li>
+
+              <li>
+                📍 Geeta Nagar Bypass Road,
+                Akola, Maharashtra
+              </li>
+
+              <li>
+                📸
+                <a
+                  href="https://instagram.com/medbridge_india"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-2 text-cyan-400 hover:text-cyan-300"
+                >
+                  @medbridge_india
+                </a>
+              </li>
+
             </ul>
-          </div>
 
-          {/* Social Media */}
-          <div>
-            <h3 className="text-xl font-semibold mb-4">
-              Follow Us
-            </h3>
-
-            <a
-              href="https://www.instagram.com/medbrdige_india"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-pink-600 hover:bg-pink-700 px-5 py-3 rounded-xl transition"
-            >
-              📸 Follow on Instagram
-            </a>
           </div>
 
         </div>
 
-        <div className="border-t border-slate-700 mt-10 pt-6 text-center text-gray-400">
-          © 2026 MedBridge. All Rights Reserved.
+        <div className="border-t border-slate-800 mt-10 pt-6 text-center text-gray-400 text-sm">
+
+          © 2026 MedBridge Consultancy. All Rights Reserved.
+
+          <div className="mt-2">
+            Your Bridge To Medical Admissions
+          </div>
+
         </div>
 
       </div>

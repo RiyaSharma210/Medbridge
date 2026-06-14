@@ -9,32 +9,40 @@ export default function AdmissionProcess() {
   ];
 
   return (
-    <section className="py-16 bg-slate-50">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-4">
-          Admission Process
-        </h2>
+    <section className="py-20 bg-background">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
-        <p className="text-center text-gray-600 mb-12">
-          We guide you through every step of your admission journey.
-        </p>
+        <div className="text-center mb-12">
 
-        <div className="grid md:grid-cols-3 gap-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground">
+            Admission Process
+          </h2>
+
+          <p className="text-slate-500 text-lg mt-4 max-w-3xl mx-auto">
+            We guide students through every stage of the medical admission process.
+          </p>
+
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
           {steps.map((step, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-2xl shadow-md text-center"
+              className="bg-[var(--card)] rounded-3xl p-8 shadow-lg border border-slate-200 hover:shadow-xl transition"
             >
-              <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">
+              <div className="w-14 h-14 mx-auto mb-5 rounded-full bg-cyan-500 text-white flex items-center justify-center text-xl font-bold">
                 {index + 1}
               </div>
 
-              <h3 className="font-semibold text-lg">
+              <h3 className="text-center text-lg font-semibold text-foreground">
                 {step}
               </h3>
             </div>
           ))}
+
         </div>
+
       </div>
     </section>
   );

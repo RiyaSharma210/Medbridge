@@ -41,24 +41,34 @@ const students = [
 
 export default function Gallery() {
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-4">
-          Our Successful Students
-        </h2>
+    <section
+      id="gallery"
+      className="py-20 bg-background"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
-        <p className="text-center text-gray-600 mb-12">
-          Dreams achieved through dedication, hard work, and expert guidance.
-        </p>
+        <div className="text-center mb-12">
+
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground">
+            Our Successful Students
+          </h2>
+
+          <p className="text-slate-500 mt-4 text-lg max-w-3xl mx-auto">
+            Dreams achieved through dedication, hard work and expert guidance.
+          </p>
+
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
           {students.map((student, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+              className="bg-[var(--card)] rounded-3xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
             >
-              <div className="relative h-[280px] w-full bg-gray-50">
-                <div className="absolute top-3 left-3 z-10 bg-red-500 text-white text-xs px-3 py-1 rounded-full">
+              <div className="relative h-[280px] w-full bg-slate-100">
+
+                <div className="absolute top-3 left-3 z-10 bg-cyan-500 text-white text-xs px-3 py-1 rounded-full">
                   Success Story
                 </div>
 
@@ -68,10 +78,12 @@ export default function Gallery() {
                   fill
                   className="object-contain p-2"
                 />
+
               </div>
 
               <div className="p-5 text-center">
-                <h3 className="text-xl font-bold text-gray-800">
+
+                <h3 className="text-xl font-bold text-foreground">
                   {student.name}
                 </h3>
 
@@ -89,13 +101,16 @@ export default function Gallery() {
                   {student.course}
                 </span>
 
-                <p className="text-gray-600 mt-3 text-sm">
+                <p className="text-slate-500 mt-3 text-sm">
                   {student.college}
                 </p>
+
               </div>
             </div>
           ))}
+
         </div>
+
       </div>
     </section>
   );
