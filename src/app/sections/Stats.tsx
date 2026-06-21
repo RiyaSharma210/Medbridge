@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const stats = [
   {
-    number: "20+",
+    number: "100+"
     label: "Successful Admissions",
   },
   {

@@ -38,7 +38,7 @@ export default function Hero() {
               transition={{ duration: 0.8 }}
               className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mt-8 leading-tight"
             >
-              <span className="text-cyan-500">20+</span>
+              <span className="text-cyan-500">100<span>
               <br />
               Successful Selections
               <br />
