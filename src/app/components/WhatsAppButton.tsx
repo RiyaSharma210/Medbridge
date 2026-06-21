@@ -1,5 +1,5 @@
 export default function WhatsAppButton() {
-  const phoneNumber = "8708542919"; // Replace with your WhatsApp number
+  const phoneNumber = "918708542919"; // Replace with your WhatsApp number
 
   return (
     <a
