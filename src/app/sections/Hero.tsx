@@ -7,7 +7,6 @@ export default function Hero() {
   return (
     <section id="home" className="bg-white pt-28 pb-12 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
           {/* LEFT */}
@@ -32,13 +31,14 @@ export default function Hero() {
               CONSULTANCY
             </p>
 
+            {/* FIXED BLOCK */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mt-8 leading-tight"
             >
-              <span className="text-cyan-500">100<span>
+              <span className="text-cyan-500">100+</span>
               <br />
               Successful Selections
               <br />
@@ -54,9 +54,8 @@ export default function Hero() {
               Private and Management Quota admissions across India.
             </p>
 
-            {/* BUTTONS (BOTH SAME STYLE) */}
+            {/* BUTTONS */}
             <div className="flex flex-wrap gap-4 mt-8">
-
               <a
                 href="/register"
                 className="bg-cyan-500 text-white px-8 py-4 rounded-full font-semibold
@@ -64,10 +63,8 @@ export default function Hero() {
               >
                 Book Your Counselling
               </a>
-
-             
-
             </div>
+
           </div>
 
           {/* RIGHT */}
