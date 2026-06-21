@@ -9,7 +9,7 @@ import OfficeSection from "./components/OfficeSection";
 import Colleges from "./sections/Colleges";
 import Testimonials from "./sections/Testimonials";
 import Contact from "./sections/Contact";
-import WhatsAppButton from "./components/WhatsAppButton";
+
 import Footer from "./components/Footer";
 import AdmissionProcess from "./sections/AdmissionProcess";
 import FAQ from "./sections/FAQ";
@@ -49,7 +49,7 @@ export default function Home() {
 
       <Contact />
     <Footer />
-    <WhatsAppButton />
+    
     </main>
   );
 }
