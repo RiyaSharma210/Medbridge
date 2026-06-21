@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import Stats from "./sections/Stats";
-import Achievements from "./sections/Achievements";
+
 import Services from "./sections/Services";
 import WhyChoose from "./sections/WhyChoose";
 import Gallery from "./sections/Gallery";
@@ -25,7 +25,7 @@ export default function Home() {
 
       <Stats />
 
-      <Achievements />
+      
 
       <Services />
 

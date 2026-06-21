@@ -10,7 +10,7 @@ export default function OfficeSection() {
           <div className="flex justify-center items-center gap-3 mb-4">
 
             <Image
-              src="/logo.png"
+              src="/photos/logo.png"
               alt="MedBridge Logo"
               width={60}
               height={60}

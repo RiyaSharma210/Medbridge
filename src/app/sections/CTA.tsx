@@ -17,7 +17,7 @@ export default function CTA() {
           rel="noopener noreferrer"
           className="inline-block mt-8 bg-white text-blue-600 font-semibold px-8 py-4 rounded-full hover:scale-105 transition"
         >
-          Book Free Counselling
+          Book Your councelling Now 
         </a>
 
       </div>

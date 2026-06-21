@@ -1,19 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section
-      id="home"
-      className="bg-white pt-28 pb-12 overflow-hidden"
-    >
+    <section id="home" className="bg-white pt-28 pb-12 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
           {/* LEFT */}
-
           <div>
 
             <motion.div
@@ -25,10 +22,7 @@ export default function Hero() {
             </motion.div>
 
             <h1 className="text-4xl md:text-6xl font-extrabold mt-6">
-              <span className="text-slate-900">
-                MED
-              </span>
-
+              <span className="text-slate-900">MED</span>
               <span className="text-cyan-500 drop-shadow-[0_0_20px_rgba(6,182,212,0.5)]">
                 BRIDGE
               </span>
@@ -38,24 +32,18 @@ export default function Hero() {
               CONSULTANCY
             </p>
 
-            <motion.h2
-              initial={{ opacity: 0, y: 40 }}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.8 }}
               className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mt-8 leading-tight"
             >
-              <span className="text-cyan-500">
-                200+
-              </span>
-
+              <span className="text-cyan-500">20+</span>
               <br />
-
               Successful Selections
-
               <br />
-
               In Medical Colleges
-            </motion.h2>
+            </motion.div>
 
             <p className="text-cyan-500 text-xl md:text-2xl font-semibold mt-5">
               Your Bridge To Medical Admissions
@@ -66,54 +54,45 @@ export default function Hero() {
               Private and Management Quota admissions across India.
             </p>
 
+            {/* BUTTONS (BOTH SAME STYLE) */}
             <div className="flex flex-wrap gap-4 mt-8">
 
-              <button className="bg-cyan-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-cyan-600 transition">
-                Book Free Counselling
-              </button>
-
               <a
-                href="/student-login"
-                className="border border-cyan-500 px-8 py-4 rounded-full hover:bg-cyan-500 hover:text-white transition"
+                href="/register"
+                className="bg-cyan-500 text-white px-8 py-4 rounded-full font-semibold
+                hover:scale-105 transition inline-block shadow-md"
               >
-                Student Login
+                Book Your Counselling
               </a>
 
-            </div>
+             
 
+            </div>
           </div>
 
           {/* RIGHT */}
-
           <div className="relative flex flex-col items-center">
 
             <motion.div
               animate={{ y: [0, -8, 0] }}
-              transition={{
-                repeat: Infinity,
-                duration: 3,
-              }}
-              className="absolute top-5 right-5 bg-cyan-500 text-white px-6 py-4 rounded-2xl shadow-xl z-20"
+              transition={{ repeat: Infinity, duration: 3 }}
+              className="absolute top-5 right-5 bg-cyan-500 text-white px-6 py-4 rounded-2xl shadow-xl z-20 will-change-transform"
             >
-              <h3 className="text-2xl font-bold">
-                #1
-              </h3>
-
-              <p className="text-sm">
-                Trusted Consultancy
-              </p>
+              <h3 className="text-2xl font-bold">#1</h3>
+              <p className="text-sm">Trusted Consultancy</p>
             </motion.div>
 
-            <img
+            <Image
               src="/office1.png"
               alt="MedBridge Office"
-              className="rounded-[30px] shadow-2xl w-full max-w-[500px] object-cover"
+              width={500}
+              height={500}
+              className="rounded-[30px] shadow-2xl w-full max-w-[500px] object-cover hover:scale-[1.02] transition"
             />
 
           </div>
 
         </div>
-
       </div>
     </section>
   );
