@@ -170,19 +170,18 @@ export default function RegisterPage() {
           </select>
 
           <select
-            name="neet_attempt"
-            value={formData.neet_attempt}
-            onChange={handleChange}
-            required
-            className="border border-slate-300 p-3 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-500"
-          />
-            <option value="">NEET Attempt</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-          </select>
-
+  name="neet_attempt"
+  value={formData.neet_attempt}
+  onChange={handleChange}
+  required
+  className="border border-slate-300 p-3 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+>
+  <option value="">NEET Attempt</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+</select>
           <input
             name="hsc_score"
             placeholder="HSC Score (%)"
@@ -216,7 +215,7 @@ export default function RegisterPage() {
             value={formData.phone_number}
             onChange={handleChange}
             required
-            className="border p-3 rounded-xl"
+            className="border border-slate-300 p-3 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-500"
           />
 
           <input
