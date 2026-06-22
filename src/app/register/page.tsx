@@ -84,14 +84,14 @@ export default function RegisterPage() {
 };
 
   return (
-    <section className="min-h-screen bg-slate-50 py-24 px-4">
+    <section className="min-h-screen bg-white py-24 px-4">
       <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl p-8">
 
-        <h1 className="text-4xl font-bold text-center mb-3">
+        <h1 className="text-4xl font-bold text-slate-900 text-center mb-3">
           Book Your Counselling
         </h1>
 
-        <p className="text-center text-gray-600 mb-10">
+        <p className="text-center text-slate-600 mb-10">
           Fill the form below and our team will contact you.
         </p>
 
@@ -106,16 +106,15 @@ export default function RegisterPage() {
             value={formData.full_name}
             onChange={handleChange}
             required
-            className="border p-3 rounded-xl"
-          />
-
+            className="border border-slate-300 p-3 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+            />
           <input
             name="neet_score"
             placeholder="NEET Score"
             value={formData.neet_score}
             onChange={handleChange}
             required
-            className="border p-3 rounded-xl"
+            className="border border-slate-300 p-3 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-500"
           />
 
           <input
@@ -124,7 +123,7 @@ export default function RegisterPage() {
             value={formData.neet_air}
             onChange={handleChange}
             required
-            className="border p-3 rounded-xl"
+           className="border border-slate-300 p-3 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-500"
           />
 
           <select
@@ -132,7 +131,7 @@ export default function RegisterPage() {
             value={formData.looking_for}
             onChange={handleChange}
             required
-            className="border p-3 rounded-xl"
+            className="border border-slate-300 p-3 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-500"
           >
             <option value="">Looking For</option>
             <option>MBBS</option>
@@ -147,7 +146,7 @@ export default function RegisterPage() {
             value={formData.preferred_state}
             onChange={handleChange}
             required
-            className="border p-3 rounded-xl"
+            className="border border-slate-300 p-3 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-500"
           >
             <option value="">Preferred State</option>
             <option>Maharashtra</option>
@@ -161,7 +160,7 @@ export default function RegisterPage() {
             value={formData.college_choice}
             onChange={handleChange}
             required
-            className="border p-3 rounded-xl"
+            className="border border-slate-300 p-3 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-500"
           >
             <option value="">College Choice</option>
             <option>Government</option>
@@ -175,8 +174,8 @@ export default function RegisterPage() {
             value={formData.neet_attempt}
             onChange={handleChange}
             required
-            className="border p-3 rounded-xl"
-          >
+            className="border border-slate-300 p-3 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+          />
             <option value="">NEET Attempt</option>
             <option>1</option>
             <option>2</option>
@@ -190,7 +189,7 @@ export default function RegisterPage() {
             value={formData.hsc_score}
             onChange={handleChange}
             required
-            className="border p-3 rounded-xl"
+            className="border border-slate-300 p-3 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-500"
           />
 
           <select
@@ -198,7 +197,7 @@ export default function RegisterPage() {
             value={formData.category}
             onChange={handleChange}
             required
-            className="border p-3 rounded-xl"
+            className="border border-slate-300 p-3 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-500"
           >
             <option value="">Category</option>
             <option>Open</option>
@@ -226,7 +225,7 @@ export default function RegisterPage() {
             value={formData.whatsapp_number}
             onChange={handleChange}
             required
-            className="border p-3 rounded-xl"
+            className="border border-slate-300 p-3 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-500"
           />
 
           <input
@@ -236,7 +235,7 @@ export default function RegisterPage() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="border p-3 rounded-xl"
+            className="border border-slate-300 p-3 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-500"
           />
 
           <input
@@ -245,7 +244,7 @@ export default function RegisterPage() {
             value={formData.address}
             onChange={handleChange}
             required
-            className="border p-3 rounded-xl md:col-span-2"
+           className="border border-slate-300 p-3 rounded-xl md:col-span-2 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-500"
           />
 
           <button
